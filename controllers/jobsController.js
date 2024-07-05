@@ -5,6 +5,10 @@ const getAllJobs = (req, res) => {
     res.status(StatusCodes.OK).json({jobs : '200 found jobs'})
 }
 
+const getJob = (req, res) => {
+    res.status(StatusCodes.OK).json({jobs : '200 found jobs'})
+}
+
 const createJob = async (req,res)=> {
     try {
     
@@ -17,7 +21,18 @@ const createJob = async (req,res)=> {
     
 }
 
+const updateJob = (req, res) => {
+    res.status(StatusCodes.OK).json({jobs : '200 found jobs'})
+}
+
+const deleteJob = (req, res) => {
+    res.status(StatusCodes.OK).json({jobs : '200 found jobs'})
+}
+
 module.exports = {
     getAllJobs,
-    createJob
+    createJob,
+    getJob,
+    updateJob,
+    deleteJob
 }
